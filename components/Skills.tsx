@@ -1,0 +1,4 @@
+"use client";
+import{Braces,Cloud,Container,Database,GitBranch,Workflow}from"lucide-react";import{Section}from"./Section";import{skillGroups}from"@/data/portfolio";
+const icons=[Braces,Workflow,GitBranch,Cloud,Database,Database,Container];
+export default function Skills(){return <Section id="skills" eyebrow="02 / Stack" title="Tools I trust in production." intro="Teknologi dipilih berdasarkan kebutuhan sistem, bukan sekadar tren."><div className="skill-grid">{skillGroups.map((group,gi)=>{const Icon=icons[gi];return <article className="skill-card tilt-card" key={group.title}><div className="skill-card-head"><Icon size={22}/><span>0{gi+1}</span></div><h3>{group.title}</h3><div className="skill-list">{group.items.map(([name,level])=><div className="skill-item" key={name}><div><span>{name}</span><small>{level}%</small></div><div className="meter"><i style={{width:`${level}%`}}/></div></div>)}</div></article>})}</div></Section>}

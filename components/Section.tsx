@@ -1,0 +1,2 @@
+import type { ReactNode } from "react";
+export function Section({ id, eyebrow, title, intro, children }: { id:string; eyebrow:string; title:string; intro?:string; children:ReactNode }) { return <section id={id} className="section-pad reveal-section"><div className="section-head"><div><p className="eyebrow">{eyebrow}</p><h2>{title}</h2></div>{intro && <p className="section-intro">{intro}</p>}</div>{children}</section>; }

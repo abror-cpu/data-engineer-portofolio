@@ -1,0 +1,5 @@
+HIKMAL ABROR — DATA ENGINEER
+
+Placeholder CV. Replace this file with your real PDF and update the link in components/Hero.tsx.
+Email: hikmal.abror@example.com
+Location: Indonesia
